@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Números no intervalo</title>
+</head>
+<body>
+ 
+    <script>
+         var numero1,numero2;
+
+            numero1 = parseFloat(numero1);
+            numero1 = prompt("Digite o primeiro número:"); 
+
+            numero2 = parseFloat(numero2);
+            numero2 = prompt("Digite o segundo número:");
+
+    var numerosIntervalo = "";
+
+        if (numero1 <= numero2) { 
+            for (var i = numero1; i <= numero2; i++) 
+            { numerosIntervalo += i + " "; } 
+        } else { for (var i = numero2; i <= numero1; i++)
+            { numerosIntervalo += i + " "; } }
+
+        alert("Números no intervalo: " + numerosIntervalo);
+        
+    </script>
+</body>
+</html>
